@@ -1,4 +1,5 @@
 body {
+  background-color: lightgrey;
   font: 14px "Century Gothic", Futura, sans-serif;
   margin: 20px;
 }
@@ -37,7 +38,7 @@ h1 {
 	margin-bottom: 10px;
 }
 .square {
-	background: #fff;
+	background-color: white;
 	border: 1px solid #999;
 	float: left;
 	font-weight: 700;
@@ -70,6 +71,14 @@ h1 {
 .game-info {
 	margin-left: 20px;
 	min-width: 13vw;
+}
+
+.board {
+  background-color: whitesmoke;
+  border-radius: 4vw;
+  }
+.board-row {
+  background-color: transparent;
 }
 
 @media (max-width: 600px) {

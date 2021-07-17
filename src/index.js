@@ -3,8 +3,9 @@ import ReactDOM from 'react-dom';
 import './index.css';
 
 function Square(props) {
+  
   return (
-    <button className={props.squareClass} onClick={ props.onClick}>
+    <button style = {props.style} className={props.squareClass} onClick={ props.onClick }>
       {props.value}
     </button> 
   );
@@ -23,7 +24,20 @@ class Board extends React.Component {
   }
     
   renderSquare(i) {
+    let style;
+    switch(i){
+      case 0: style ={borderTopLeftRadius:'4vw'};
+      break;
+      case 2: style ={borderTopRightRadius:'4vw'};
+      break;
+      case 6: style ={borderBottomLeftRadius:'4vw'};
+      break;
+      case 8: style ={borderBottomRightRadius:'4vw'};
+      break;
+      default: style ={};
+    }
       return <Square 
+      style = {style}
       key = {'square'+i}
       value={this.props.squares[i]}
       squareClass={(i===this.props.lastSquare)? 'square current':'square'} 
