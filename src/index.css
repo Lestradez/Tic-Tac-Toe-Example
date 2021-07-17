@@ -64,7 +64,7 @@ ol, ul {
   min-width: 13vw;
 }
 
-@media all and (min-width:500px) {
+@media all and (min-width:600px) {
   .square {
     
     font-size: 15vw;
@@ -73,8 +73,14 @@ ol, ul {
     
     width: 15vw;
   }
+  h1{
+    font-size: x-large;
+  }
+  .button{
+    font-size: x-large;
+  }
  }
- @media all and (max-width:500px) { 
+ @media (max-width:600px) { 
   .square {
   
   font-size: 8vh;
@@ -83,4 +89,27 @@ ol, ul {
   
   width: 8vh;
 }
+h1{
+  font-size: large;
+}
+.button{
+  font-size: large;
+}
+ }
+
+@media (max-width:500px) { 
+  .square {
+  
+  font-size: 5vh;
+  
+  height: 5vh;
+  
+  width: 5vh;
+}
+  h1{
+    font-size: medium;
+  }
+  .button{
+    font-size: medium;
+  }
 }
