@@ -7,6 +7,15 @@ ol, ul {
   padding-left: 30px;
 }
 
+.button {
+  font-size: x-large;
+}
+
+.coordinates {
+  font-weight: bold;
+  font-size: medium;
+}
+
 .board-row:after {
   clear: both;
   content: "";
@@ -21,15 +30,15 @@ ol, ul {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 24px;
+  font-size: 12vw;
   font-weight: bold;
   line-height: 34px;
-  height: 34px;
+  height: 15vw;
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 34px;
+  width: 15vw;
 }
 .current{
   border: 2px solid #000;
@@ -46,8 +55,10 @@ ol, ul {
 .game {
   display: flex;
   flex-direction: row;
+  place-content: center;
 }
 
 .game-info {
   margin-left: 20px;
+  min-width: 13vw;
 }

@@ -24,6 +24,7 @@ class Board extends React.Component {
     
   renderSquare(i) {
       return <Square 
+      key = {'square'+i}
       value={this.props.squares[i]}
       squareClass={(i===this.props.lastSquare)? 'square current':'square'} 
       onClick={ ()=>this.props.onClick(i)}
@@ -37,7 +38,7 @@ class Board extends React.Component {
       for(var j = 0; j < 3; j++){
         squares.push(this.renderSquare(3*i+j));
       }
-      rows.push(<div className="board-row">{squares}</div>);
+      rows.push(<div key = {'row'+i} className="board-row">{squares}</div>);
     }
     return rows;
   }
@@ -101,12 +102,12 @@ class Game extends React.Component {
     const moves = history.map((step,move)=>{
       const coordinates = step.stepCoordinates;
       const desc = move ?
-      'Go to move#' + move :
-      'Go to game start';     
+      'Move # ' + move :
+      'Start';     
       return(
         <li key={move}>
-          <button onClick = {()=> this.jumpTo(move)}>{desc}</button>
-          <label>{coordinates}</label>
+          <button className = "button" onClick = {()=> this.jumpTo(move)}>{desc}</button>
+          <label className = "coordinates" > {coordinates}</label>
         </li>
       );
     });
@@ -127,7 +128,7 @@ class Game extends React.Component {
             onClick = {(i)=>{this.handleClick(i)}} />
         </div>
         <div className="game-info">
-          <div>{ status }</div>
+          <div><h1>{ status }</h1></div>
           <ol>{ moves }</ol>
         </div>
       </div>
