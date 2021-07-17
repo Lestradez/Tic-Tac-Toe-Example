@@ -3,7 +3,7 @@ body{font:14px "Century Gothic",Futura,sans-serif;margin:20px}ol,ul{padding-left
 .coordinates{font-weight:700;font-size:medium}
 .board-row:after{clear:both;content:"";display:table}
 .status{margin-bottom:10px}
-.square{background:#fff;border:1px solid #999;float:left;font-size:12vw;font-weight:700;line-height:34px;min-height:5vw; max-height_15vw;margin-right:-1px;margin-top:-1px;padding:0;text-align:center;min-width;5vw;max-width:15vw}
+.square{background:#fff;border:1px solid #999;float:left;font-size:12vw;font-weight:700;line-height:34px;min-height:5vw; max-height_15vw;margin-right:-1px;margin-top:-1px;padding:0;text-align:center;min-width:5vw;max-width:15vw}
 .current{border:2px solid #000;background:#ff0}
 .square:focus{outline:none}
 .kbd-navigation 
