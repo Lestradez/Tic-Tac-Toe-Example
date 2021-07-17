@@ -10,106 +10,113 @@ ol, ul {
 .button {
   font-size: x-large;
 }
-
+body {
+	font: 14px "Century Gothic", Futura, sans-serif;
+	margin: 20px;
+}
+ol,
+ul {
+	padding-left: 30px;
+}
+.button {
+	font-size: x-large;
+}
+h1 {
+	font-size: x-large;
+}
 .coordinates {
-  font-weight: bold;
-  font-size: medium;
+	font-weight: 700;
+	font-size: medium;
 }
-
 .board-row:after {
-  clear: both;
-  content: "";
-  display: table;
+	clear: both;
+	content: "";
+	display: table;
 }
-
 .status {
-  margin-bottom: 10px;
+	margin-bottom: 10px;
 }
-
 .square {
-  background: #fff;
-  border: 1px solid #999;
-  float: left;
-  
-  font-weight: bold;
-  line-height: 34px;
-  
-  margin-right: -1px;
-  margin-top: -1px;
-  padding: 0;
-  text-align: center;
-  
+	background: #fff;
+	border: 1px solid #999;
+	float: left;
+	font-weight: 700;
+	line-height: 34px;
+	margin-right: -1px;
+	margin-top: -1px;
+	padding: 0;
+	text-align: center;
+	font-size: 15vw;
+	height: 15vw;
+  max-height: 28vh;
+	width: 15vw;
+  max-width: 28vh;
 }
-
-.current{
-  border: 2px solid #000;
-  background: #ff0;
+.current {
+	border: 2px solid #000;
+	background: #ff0;
 }
 .square:focus {
-  outline: none;
+	outline: none;
 }
-
 .kbd-navigation .square:focus {
-  background: #ddd;
+	background: #ddd;
 }
-
 .game {
-  display: flex;
-  flex-direction: row;
-  place-content: center;
+	display: flex;
+	flex-direction: row;
+	place-content: center;
 }
-
 .game-info {
-  margin-left: 20px;
-  min-width: 13vw;
+	margin-left: 20px;
+	min-width: 13vw;
 }
 
-@media all and (min-width:600px) {
-  .square {
-    
-    font-size: 15vw;
-    
-    height: 15vw;
-    
-    width: 15vw;
-  }
-  h1{
-    font-size: x-large;
-  }
-  .button{
-    font-size: x-large;
-  }
- }
- @media (max-width:600px) { 
-  .square {
-  
-  font-size: 8vh;
-  
-  height: 8vh;
-  
-  width: 8vh;
+@media (max-width: 600px) {
+	.square {
+		font-size: 8vh;
+		height: 8vh;
+		width: 8vh;
+	}
+	.button,
+	h1 {
+		font-size: large;
+	}
 }
-h1{
-  font-size: large;
+@media (max-width: 500px) {
+	.square {
+		font-size: 6vh;
+		height: 6vh;
+		width: 6vh;
+	}
+	.button,
+	h1 {
+		font-size: medium;
+	}
 }
-.button{
-  font-size: large;
+@media (max-width: 400px) {
+	.square {
+		font-size: 5vh;
+		height: 5vh;
+		width: 5vh;
+	}
+	.button,
+	h1 {
+		font-size: small;
+	}
 }
- }
 
-@media (max-width:500px) { 
-  .square {
-  
-  font-size: 5vh;
-  
-  height: 5vh;
-  
-  width: 5vh;
+@media (max-width: 300px) {
+	.square {
+		font-size: 4vh;
+		height: 4vh;
+		width: 4vh;
+	}
+	.button,
+	h1 {
+		font-size: small;
+	}
 }
-  h1{
-    font-size: medium;
-  }
-  .button{
-    font-size: medium;
-  }
-}
+
+/*# sourceMappingURL=main.ca4182f0.chunk.css.map */
+
