@@ -30,16 +30,17 @@ ol, ul {
   background: #fff;
   border: 1px solid #999;
   float: left;
-  font-size: 12vw;
+  
   font-weight: bold;
   line-height: 34px;
-  height: 15vw;
+  
   margin-right: -1px;
   margin-top: -1px;
   padding: 0;
   text-align: center;
-  width: 15vw;
+  
 }
+
 .current{
   border: 2px solid #000;
   background: #ff0;
@@ -61,4 +62,25 @@ ol, ul {
 .game-info {
   margin-left: 20px;
   min-width: 13vw;
+}
+
+@media all and (min-width:500px) {
+  .square {
+    
+    font-size: 15vw;
+    
+    height: 15vw;
+    
+    width: 15vw;
+  }
+ }
+ @media all and (max-width:500px) { 
+  .square {
+  
+  font-size: 8vh;
+  
+  height: 8vh;
+  
+  width: 8vh;
+}
 }
