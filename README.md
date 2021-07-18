@@ -1,3 +1,17 @@
+# Tic tac toe game example
+## Is an exercise to learn across a tutorial, about construct an app whit React JS.
+[Tutorial](https://es.reactjs.org/tutorial/tutorial.html)
+### before tutorial is finished they pourpose six erxercises:
+1.Muestra la ubicación para cada movimiento en el formato (columna, fila) en la lista del historial de movimientos.
+1.Show the ubication for each move in (column, row) format on the historic movement list.
+2.Convierte en negrita el elemento actualmente seleccionado en la lista de movimientos.
+2.Convert to bold the actualy selected element on the movement list.
+3.Reescribe el Board para usar 2 ciclos para hacer los cuadrados en vez de escribirlos a mano.
+3.Rewrite the Board to use 2 cycles to make the squares instead of writing them by hand.
+4.Agrega un botón de switch que te permita ordenar los movimientos en orden ascendente o descendente.
+5.Cuando alguien gana, resalta los 3 cuadrados que hicieron que gane.
+6.Cuando nadie gana, muestra un mensaje acerca de que el resultado es un empate.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
